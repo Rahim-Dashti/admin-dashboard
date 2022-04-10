@@ -1,3 +1,26 @@
+html,body {
+    margin: 0;
+}
+
 .container {
+    width: 100vw;
+    height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3,2fr);
+}
+
+.top-bar {
+    grid-area: 1/2/2/-1;
+    background-color: blue;
+}
+
+.side-bar {
+    grid-area: 1/1/-1/2;
+    background-color: red;
+}
+
+.main-content {
+    grid-area: 2/2/-1/-1;
+    background-color: green;
 }
